@@ -1,5 +1,8 @@
+<script>
+    import { scrollAnimation } from '$lib/scrollAnimation';
+</script>
 <div class="mission-vision-container">
-    <div class="section">
+    <div class="section" use:scrollAnimation={{ animation: 'slideRight', delay: 300 }}>
         <div class="tag">Our Mission</div>
         <h2>Support Those in Need</h2>
         <p>
@@ -9,7 +12,7 @@
         </p>
     </div>
 
-    <div class="section">
+    <div class="section" use:scrollAnimation={{ animation: 'slideLeft', delay: 300 }}>
         <div class="tag">Our Vision</div>
         <h2>A Place for Everyone</h2>
         <p>

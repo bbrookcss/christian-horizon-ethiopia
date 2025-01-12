@@ -1,12 +1,15 @@
+<script>
+    import { scrollAnimation } from '$lib/scrollAnimation';
+</script>
 <section class="leadership-container">
-    <div class="container">
+    <div class="container" use:scrollAnimation={{ animation: 'slideRight', delay: 300 }}>
         <div class="tag">Leadership Team & Collaborations</div>
         <h2>Leadership</h2>
         <p class="description">
             Our dedicated leadership team drives CHE's mission, supported by strong partnerships with local and international organizations like Karis Disability Services, LMI Ethiopia & International, and WISE. Together, we work to create lasting impact in the communities we serve.
         </p>
 
-        <div class="team-grid">
+        <div class="team-grid" use:scrollAnimation={{ animation: 'slideUp', delay: 400 }}>
             <div class="team-member">
                 <img src="./megrsa.jpg" alt="Dr. Megersa Dabessa" />
                 <h3>Dr. Megersa Dabessa</h3>
@@ -24,7 +27,7 @@
             </div>
         </div>
 
-        <div class="partners-section">
+        <div class="partners-section" use:scrollAnimation={{ animation: 'slideLeft', delay: 300 }}>
             <div class="partners-content">
                 <div class="partners-text">
                     <h2>Our Partners</h2>
@@ -39,7 +42,7 @@
         </div>
 
         <div class="camp-images">
-            <div class="image-grid">
+            <div class="image-grid" use:scrollAnimation={{ animation: 'slideUp', delay: 400 }}> 
                 <img src="./camp1.jpg" alt="Community camp activities" class="camp-img" />
                 <img src="./camp2.jpg" alt="Community camp activities" class="camp-img" />
                 <img src="./camp3.jpg" alt="Community camp activities" class="camp-img" />
@@ -47,7 +50,7 @@
             </div>
         </div>
 
-        <div class="cta-container">
+        <div class="cta-container" use:scrollAnimation={{ animation: 'slideTop', delay: 300 }}>
             <div class="cta-section">
                 <div class="cta-card">
                     <h3>Volunteer</h3>

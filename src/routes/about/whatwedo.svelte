@@ -1,5 +1,6 @@
 <script>
   import { fade, fly } from 'svelte/transition';
+  import { scrollAnimation } from '$lib/scrollAnimation';
   let showDetails = false;
   let hoveredCard = null;
 </script>
@@ -8,9 +9,9 @@
   <div class="global-overlay" transition:fade={{ duration: 200 }}></div>
 {/if}
 
-<section class="whatwedo-container">
+<section class="whatwedo-container" >
     <div class="container">
-        <div class="left-content">
+        <div class="left-content" use:scrollAnimation={{ animation: 'slideRight', delay: 300 }}>
             <div class="tag">What we do</div>
             <h2>Inclusive Development and Support</h2>
             <p>

@@ -6,14 +6,18 @@
     import News from './news.svelte';
     import Newsletter from './newsletter.svelte';
     import Footer from './footer.svelte';
+    import { scrollAnimation } from '$lib/scrollAnimation';
+    import { fade, fly } from 'svelte/transition';
 </script>
 <Header />
 
 <section class="hero-section">
-    <div class="image-container">
+    <div class="image-container" in:fade={{ duration: 1000, delay: 200 }}>
       <img src="./image1.png" alt="Hero Image" class="hero-image" />
     </div>
-    <div class="content">
+    <div class="content" 
+         in:fly={{ y: 50, duration: 1000, delay: 800 }}
+         use:scrollAnimation={{ animation: 'slideRight', delay: 300 }}>
       <h1>Building Brighter Futures<br>for Children and Communities</h1>
       <p>
         Empowering Ethiopian children, women, and people with disabilities<br>

@@ -1,10 +1,11 @@
 <script>
     import Header from '../header.svelte';
+    import { scrollAnimation } from '$lib/scrollAnimation';
 </script>
 
 
 <div class="about-container">
-    <div class="content-section">
+    <div class="content-section" use:scrollAnimation={{ animation: 'slideRight', delay: 300 }}>
         <div class="tag">Who we are</div>
         <h1>Christian Horizons Ethiopia</h1>
         <p>
@@ -16,7 +17,7 @@
             caring communities.
         </p>
     </div>
-    <div class="image-section">
+    <div class="image-section" use:scrollAnimation={{ animation: 'slideLeft', delay: 300 }}>
         <img src="./aboutiimg1.jpg" alt="Christian Horizons Ethiopia Community" />
     </div>
 </div>

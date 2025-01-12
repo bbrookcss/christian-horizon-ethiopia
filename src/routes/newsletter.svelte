@@ -1,6 +1,10 @@
+<script>
+  import { scrollAnimation } from '$lib/scrollAnimation';
+</script>
+
 <section class="newsletter">
   <div class="container">
-    <div class="content">
+    <div class="content" use:scrollAnimation={{ animation: 'slideRight' }}>
       <span class="tag">Newsletter</span>
       <h2>Stay updated</h2>
       <p>
@@ -12,7 +16,7 @@
         <button class="subscribe-btn">Subscribe</button>
       </div>
     </div>
-    <div class="image-stack">
+    <div class="image-stack" use:scrollAnimation={{ animation: 'scale', delay: 200 }}>
       <img src="/img5.jpg" alt="Community Support" class="stack-img" />
       <img src="/img6.jpg" alt="Children Activities" class="stack-img" />
       <img src="/img7.jpg" alt="Support Programs" class="stack-img" />

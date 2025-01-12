@@ -1,6 +1,10 @@
+<script>
+  import { scrollAnimation } from '$lib/scrollAnimation';
+</script>
+
 <section class="partners">
   <div class="container">
-    <div class="left-content">
+    <div class="left-content" use:scrollAnimation={{ animation: 'slideRight' }}>
       <span class="tag">Partnerships & Sponsorships</span>
       
       <div class="partners-header">
@@ -12,7 +16,7 @@
       </div>
     </div>
 
-    <div class="partner-logos">
+    <div class="partner-logos" use:scrollAnimation={{ animation: 'slideLeft', delay: 200 }}>
       <img src="/karis.png" alt="Karis Disability Services" class="karis-logo" />
       <div class="secondary-logos">
         <img src="/lmi.png" alt="Leadership Management International" />
@@ -23,7 +27,7 @@
 
   <div class="cta-container">
     <div class="cta-section">
-      <div class="cta-card">
+      <div class="cta-card" use:scrollAnimation={{ animation: 'slideUp', delay: 300 }}>
         <h3>Volunteer</h3>
         <p>
           Join us as a volunteer and help us uplift vulnerable communities through
@@ -35,7 +39,7 @@
         rel="noopener noreferrer"><button class="cta-button">Get Involved</button></a>
       </div>
 
-      <div class="cta-card">
+      <div class="cta-card" use:scrollAnimation={{ animation: 'slideUp', delay: 400 }}>
         <h3>Donate</h3>
         <p>
           Your donation helps us provide essential services to children, women,
@@ -56,6 +60,10 @@
 </section>
 
 <style>
+  :global([use\:scrollAnimation]) {
+    opacity: 0;
+  }
+
   .partners {
     padding: 3rem 2rem;
     background-color: white;

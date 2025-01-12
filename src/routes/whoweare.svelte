@@ -1,5 +1,6 @@
 <script>
   import { fade, fly } from 'svelte/transition';
+  import { scrollAnimation } from '$lib/scrollAnimation';
   let showDetails = false;
   let hoveredCard = null;
 </script>
@@ -10,7 +11,7 @@
 
 <section class="who-we-are">
     <div class="container">
-      <div class="left-content">
+      <div class="left-content" use:scrollAnimation={{ animation: 'slideRight' }}>
         <span class="tag">Who we are</span>
         <h2>We are Christian Horizon Ethiopia</h2>
         <p>

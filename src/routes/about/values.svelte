@@ -1,6 +1,9 @@
+<script>
+    import { scrollAnimation } from '$lib/scrollAnimation';
+</script>
 <section class="values-container">
     <div class="container">
-        <div class="left-content">
+        <div class="left-content" use:scrollAnimation={{ animation: 'slideRight', delay: 300 }}>
             <div class="tag">Our Values</div>
             <h2>Compassion, Integrity, and Inclusion</h2>
 
@@ -32,7 +35,7 @@
             </div>
         </div>
 
-        <div class="image-grid">
+        <div class="image-grid" use:scrollAnimation={{ animation: 'slideUp', delay: 400 }}>
             <img src="/img1.jpg" alt="Community work" class="grid-img img1">
             <img src="/img2.jpg" alt="Community work" class="grid-img img2">
             <img src="/img3.jpg" alt="Community work" class="grid-img img3">

@@ -1,9 +1,13 @@
+<script>
+  import { scrollAnimation } from '$lib/scrollAnimation';
+</script>
+
 <section class="programs">
     <div class="container">
       <span class="tag">Our Programs</span>
       
       <!-- First Program: Education -->
-      <div class="program-section">
+      <div class="program-section" use:scrollAnimation={{ animation: 'slideRight', delay: 200 }}>
         <div class="content">
           <h2>Education</h2>
           <p>
@@ -27,7 +31,7 @@
       </div>
   
       <!-- Second Program: Charity Program -->
-      <div class="program-section">
+      <div class="program-section" use:scrollAnimation={{ animation: 'slideLeft', delay: 200 }}>
         <div class="image-grid">
           <img src="./img5.jpg" alt="Community support" />
           <img src="./img6.jpg" alt="Charity work" />
