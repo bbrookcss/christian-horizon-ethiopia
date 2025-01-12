@@ -54,7 +54,7 @@
         class:dark={darkMode}>
     <div class="container">
         <a href="/" class="logo">
-            <img src="logo.png" alt="Christian Horizons Logo" class="logo-image">
+            <img src="../../logo.png" alt="Christian Horizons Logo" class="logo-image">
         </a>
         <!-- Hamburger Menu Button -->
         <button class="mobile-menu-btn" 
@@ -72,7 +72,7 @@
             
             <!-- About Us Dropdown -->
             <div class="nav-item dropdown" class:scrolled={isScrolled} on:mouseenter={() => isAboutUsOpen = true} on:mouseleave={() => isAboutUsOpen = false}>
-                <a href="./about" class:scrolled={isScrolled}><span>About Us</span></a>
+                <a href="../../about" class:scrolled={isScrolled}><span>About Us</span></a>
                 
             </div>
             <!-- Programs Dropdown -->
@@ -84,11 +84,11 @@
                 <i class={`${isProgramsOpen ? "fas fa-angle-up" : "fas fa-angle-down"} ${isScrolled ? "scrolled" : ""}`}></i>
                 {#if isProgramsOpen}
                     <div class="dropdown-menu">
-                        <a href="./disability" class="dropdown-item">Disability</a>
+                        <a href="../../disability" class="dropdown-item">Disability</a>
                         <hr>
-                        <a href="./economicpower" class="dropdown-item">economic power</a>
+                        <a href="../../economicpower" class="dropdown-item">economic power</a>
                         <hr>
-                        <a href="./education" class="dropdown-item">Education</a>
+                        <a href="../../education" class="dropdown-item">Education</a>
                     </div>
                 {/if}
             </div>
@@ -102,7 +102,7 @@
                 <i class={`${isInvolvedOpen ? "fas fa-angle-up" : "fas fa-angle-down"} ${isScrolled ? "scrolled" : ""}`}></i>
                 {#if isInvolvedOpen}
                     <div class="dropdown-menu">
-                        <a href="./horizonschool" class="dropdown-item">Horizon school</a>
+                        <a href="../../horizonschool" class="dropdown-item">Horizon school</a>
                     </div>
                 {/if}
             </div>
@@ -116,9 +116,9 @@
                 <i class={`${isMediaOpen ? "fas fa-angle-up" : "fas fa-angle-down"} ${isScrolled ? "scrolled" : ""}`}></i>
                 {#if isMediaOpen}
                     <div class="dropdown-menu">
-                        <a href="./blog" class="dropdown-item">Blogs</a>
+                        <a href="../../blog" class="dropdown-item">Blogs</a>
                         <hr>
-                        <a href="./blog" class="dropdown-item">Media</a>
+                        <a href="../../blog" class="dropdown-item">Media</a>
                     </div>
                 {/if}
             </div>

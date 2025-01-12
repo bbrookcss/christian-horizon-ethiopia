@@ -54,7 +54,7 @@
         class:dark={darkMode}>
     <div class="container">
         <a href="/" class="logo">
-            <img src="logo.png" alt="Christian Horizons Logo" class="logo-image">
+            <img src="logo2.png" alt="Christian Horizons Logo" class="logo-image">
         </a>
         <!-- Hamburger Menu Button -->
         <button class="mobile-menu-btn" 
@@ -118,12 +118,12 @@
                     <div class="dropdown-menu">
                         <a href="./blog" class="dropdown-item">Blogs</a>
                         <hr>
-                        <a href="./blog" class="dropdown-item">Media</a>
+                        <a href="./media" class="dropdown-item">Media</a>
                     </div>
                 {/if}
             </div>
     
-            <a href="/contact" class="nav-item" class:scrolled={isScrolled}>Contact Us</a>
+            <a href="#" class="nav-item" class:scrolled={isScrolled}>Contact Us</a>
             <a href="#" class="btn-donate mobile-donate">Donate Now</a>
         </nav>
     
@@ -169,7 +169,7 @@
   
     /* Logo */
     .logo-image {
-        height: 60px;
+        height: 100px;
     }
     /* Navigation Menu */
     .nav {
@@ -411,7 +411,7 @@
     }
 
     .logo-image {
-        height: 40px; /* Smaller logo for mobile */
+        height: 80px; /* Smaller logo for mobile */
     }
     .dropdown-menu {
     position: absolute; /* Ensure it's correctly positioned relative to the dropdown */

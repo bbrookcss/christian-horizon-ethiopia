@@ -62,16 +62,6 @@
       margin: 0 auto;
     }
   
-    .tag {
-      display: inline-block;
-      background-color: #DBEAFE;
-      color: #004197;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-  
     .program-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
