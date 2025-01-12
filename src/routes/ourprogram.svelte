@@ -13,7 +13,7 @@
             environment, especially for children with disabilities and those from
             economically disadvantaged families.
           </p>
-          <a href="/programs/education" class="learn-more">
+          <a href="/Education" class="learn-more">
             Learn more →
           </a>
         </div>
@@ -36,14 +36,11 @@
         </div>
   
         <div class="content">
-          <h2>Charity Program (Support)</h2>
+          <h2>Economic Empowerment</h2>
           <p>
-            Our Charity Program extends beyond education, providing essential care
-            and support to some of Ethiopia's most vulnerable populations, including
-            orphans, children with disabilities, and those from impoverished
-            backgrounds.
+            Our economic empowerment program focuses on providing skills training, financial literacy, and entrepreneurship support to help individuals and families achieve sustainable economic independence.
           </p>
-          <a href="/programs/charity" class="learn-more">
+          <a href="/economicpower" class="learn-more">
             Learn more →
           </a>
         </div>

@@ -1,3 +1,13 @@
+<script>
+  import { fade, fly } from 'svelte/transition';
+  let showDetails = false;
+  let hoveredCard = null;
+</script>
+
+{#if hoveredCard}
+  <div class="global-overlay" transition:fade={{ duration: 200 }}></div>
+{/if}
+
 <section class="whatwedo-container">
     <div class="container">
         <div class="left-content">
@@ -15,27 +25,61 @@
         </div>
 
         <div class="stats-grid">
-            <div class="stat-card orange">
+            <div class="stat-card orange" 
+            on:mouseenter={() => hoveredCard = 'families'} 
+            on:mouseleave={() => hoveredCard = null}>
                 <h3>660+</h3>
                 <p>Families Supported</p>
+                {#if hoveredCard === 'families'}
+                    <div class="card-details" transition:fly={{ y: 20, duration: 300 }}>
+                        <h4>In Family Support We Are Covering 660+ Children</h4>
+                        <p>We are providing education, rehabilitation, and sustainable economic empowerment to create lasting change in communities.</p>
+                    </div>
+                {/if}
             </div>
-            <div class="stat-card blue">
+            <div class="stat-card blue"
+            on:mouseenter={() => hoveredCard = 'weekend-daycare'} 
+            on:mouseleave={() => hoveredCard = null}>
                 <h3>80+</h3>
                 <p>Weekend Daycare</p>
+                {#if hoveredCard === 'weekend-daycare'}
+                    <div class="card-details" transition:fly={{ y: 20, duration: 300 }}>
+                        <h4>In Weekend Daycare We Are Covering 80+ Children</h4>
+                        <p>We are providing education, rehabilitation, and sustainable economic empowerment to create lasting change in communities.</p>
+                    </div>
+                {/if}
             </div>
-            <div class="stat-card blue">
+            <div class="stat-card blue"
+            on:mouseenter={() => hoveredCard = 'child-development-unit'} 
+            on:mouseleave={() => hoveredCard = null}>
                 <h3>24</h3>
                 <p>Child Development Unit</p>
+                {#if hoveredCard === 'child-development-unit'}
+                    <div class="card-details" transition:fly={{ y: 20, duration: 300 }}>
+                        <h4>In Child Development Unit We Are Covering 24 Children</h4>
+                        <p>We are providing education, rehabilitation, and sustainable economic empowerment to create lasting change in communities.</p>
+                    </div>
+                {/if}
             </div>
-            <div class="stat-card orange">
+            <div class="stat-card orange"
+            on:mouseenter={() => hoveredCard = 'sponsored-children'} 
+            on:mouseleave={() => hoveredCard = null}>
                 <h3>530+</h3>
                 <p>Sponsored Children</p>
+                {#if hoveredCard === 'sponsored-children'}
+                    <div class="card-details" transition:fly={{ y: 20, duration: 300 }}>
+                        <h4>In Sponsored Children We Are Covering 530+ Children</h4>
+                        <p>We are providing education, rehabilitation, and sustainable economic empowerment to create lasting change in communities.</p>
+                    </div>
+                {/if}
             </div>
         </div>
     </div>
 </section>
 
 <style>
+
+
     .whatwedo-container {
         padding: 6rem 2rem;
         background-color: white;
@@ -77,6 +121,7 @@
         padding: 2rem;
         border-radius: 1rem;
         text-align: left;
+        position: relative;
     }
 
     .stat-card.orange {
@@ -98,7 +143,31 @@
         color: #000;
         font-size: 1.1rem;
     }
-
+    .card-details {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      right: 0;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      z-index: 10;
+      margin-top: 0.5rem;
+      min-width: 300px;
+    }
+  
+    .card-details h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: #000;
+    }
+  
+    .card-details p {
+      font-size: 0.875rem;
+      color: #666;
+      margin-bottom: 0;
+    }
     @media (max-width: 968px) {
         .container {
             grid-template-columns: 1fr;
@@ -107,6 +176,9 @@
 
         .left-content {
             max-width: 100%;
+        }
+        .card-details {
+            min-width: 250px;
         }
     }
 

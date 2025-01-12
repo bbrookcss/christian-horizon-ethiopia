@@ -55,7 +55,10 @@
                         Join us as a volunteer and help us uplift vulnerable communities through
                         education, rehabilitation, and socio-economic support.
                     </p>
-                    <button class="cta-button">Get Involved</button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4ZuMzT9IX-1BuzhWawkH1V6uo0g4zrYc5ukJIKI5iu1T1ZQ/viewform?usp=dialog" 
+                    class="primary-btn" 
+                    target="_blank" 
+                    rel="noopener noreferrer"><button class="cta-button">Get Involved</button></a>
                 </div>
 
                 <div class="cta-card">

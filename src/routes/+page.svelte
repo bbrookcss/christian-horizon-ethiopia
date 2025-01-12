@@ -20,7 +20,10 @@
         through education, care, and sustainable support.
       </p>
       <div class="buttons">
-        <a href="/get-involved" class="primary-btn">Get Involved</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4ZuMzT9IX-1BuzhWawkH1V6uo0g4zrYc5ukJIKI5iu1T1ZQ/viewform?usp=dialog" 
+           class="primary-btn" 
+           target="_blank" 
+           rel="noopener noreferrer">Get Involved</a>
       </div>
     </div>
 </section>
